@@ -6,7 +6,7 @@ public class ElectronicProduct extends Product implements Resellable ,Warranty{
     private float resalePrice;
 
     public ElectronicProduct(String name, int stock, float sellPrice, String brand,
-                             int warrantyInMonths, float resalePrice, String condition) {
+                             int warrantyInMonths, float resalePrice) {
         super(name, stock, sellPrice);
         this.brand = brand;
         this.warrantyInMonths = warrantyInMonths;

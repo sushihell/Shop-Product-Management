@@ -2,7 +2,9 @@ package order;
 
 import product.Product;
 
-public class CartProduct {
+import java.io.Serializable;
+
+public class CartProduct implements Serializable {
     private Product product;
     private int quantity;
 
@@ -17,5 +19,8 @@ public class CartProduct {
 
     public int getQuantity() {
         return quantity;
+    }
+    public void setQuantity(int quantity){
+        this.quantity = quantity;
     }
 }

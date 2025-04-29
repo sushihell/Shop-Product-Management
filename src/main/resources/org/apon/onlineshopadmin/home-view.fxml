@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 
+<?import javafx.scene.layout.Pane?>
 <VBox xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.apon.onlineshopadmin.HomeController"
       alignment="TOP_CENTER"
@@ -16,7 +17,7 @@
   </padding>
 
   <!-- Heading -->
-  <Label text="Shop Admin Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+  <Label text="Product Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
 
   <!-- Status Labels in HBox -->
   <HBox alignment="CENTER" spacing="30">
@@ -29,5 +30,4 @@
   <Button text="View Products" onAction="#onViewProductsClicked" prefWidth="200"/>
   <Button text="View Orders" onAction="#onViewOrdersClicked" prefWidth="200"/>
   <Button text="Place Order" onAction="#onCustomerOrderClicked" prefWidth="200"/>
-
 </VBox>

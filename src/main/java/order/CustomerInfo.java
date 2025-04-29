@@ -1,6 +1,8 @@
 package order;
 
-public class CustomerInfo {
+import java.io.Serializable;
+
+public class CustomerInfo implements Serializable {
     private String name;
     private String location;
     private int phoneNumber;
@@ -46,6 +48,9 @@ public class CustomerInfo {
 
     public int getPhoneNumber() {
         return phoneNumber;
+    }
+    public String getEmail() {
+        return email;
     }
     public String getLocation() {
         return location;

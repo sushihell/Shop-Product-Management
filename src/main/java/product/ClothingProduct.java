@@ -7,12 +7,11 @@ public class ClothingProduct extends Product implements Resellable {
     private String condition;
 
     public ClothingProduct(String name, int stock, float sellPrice, String size,
-                           String material, float resalePrice, String condition) {
+                           String material, float resalePrice) {
         super(name, stock, sellPrice);
         this.size = size;
         this.material = material;
         this.resalePrice = resalePrice;
-        this.condition = condition;
     }
 
     public String getSize() {
