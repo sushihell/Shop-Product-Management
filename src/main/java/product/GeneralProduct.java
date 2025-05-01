@@ -4,8 +4,4 @@ public class GeneralProduct extends Product {
     public GeneralProduct(String name, int stock, float sellPrice) {
         super(name, stock, sellPrice);
     }
-    @Override
-    public String toString() {
-        return getName()  + ", Stock: " + getStock();
-    }
 }
